@@ -1,21 +1,20 @@
 // components/magic-button/magic-button.js
+import Images from '../res.imgs'
 
 Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-    btnMoreImg: {
-      type: String,
-      value: './res/more_icon.png',
-    }
-  },
 
   /**
    * 组件的初始数据
    */
   data: {
     showMagic: false,
+  },
+
+  ready() {
+    const Images = new Images();
+    this.setData({
+      btnMoreImg: Images.MagicButtonMore
+    })
   },
 
   /**
@@ -37,7 +36,7 @@ Component({
     },
 
     onMagicTapped() {
-      this.triggerEvent('on2btnTapped');
+      this.triggerEvent('onTapped');
       this.setData({
         showMagic: false,
       });
