@@ -1,6 +1,6 @@
 {
   "name": "koo-ware",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "widgets for Mina",
   "main": "index.js",
   "miniprogram": "dist",

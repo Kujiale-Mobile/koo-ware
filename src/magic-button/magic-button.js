@@ -1,5 +1,5 @@
 // components/magic-button/magic-button.js
-import Images from '../res.imgs'
+import ImageSettings from '../res/imgs'
 
 Component({
 
@@ -11,7 +11,7 @@ Component({
   },
 
   ready() {
-    const Images = new Images();
+    const Images = new ImageSettings();
     this.setData({
       btnMoreImg: Images.MagicButtonMore
     })
