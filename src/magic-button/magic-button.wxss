@@ -1,0 +1,76 @@
+/* components/magic-button/magic-button.wxss */
+
+.view-container {
+  position: relative;
+  width: 68rpx;
+  height: 64rpx;
+}
+
+.img-more {
+  position: relative;
+  width: 68rpx;
+  height: 64rpx;
+  background-color: #f2f2f2;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-more>.img {
+  width: 50rpx;
+  height: 47rpx;
+}
+
+.btn-magic {
+  position: absolute;
+  top: 72.8rpx;
+  right: 0;
+  width: 176rpx;
+  height: 71.2rpx;
+  display: flex;
+  overflow: hidden;
+}
+
+.inner {
+  position: absolute;
+  bottom: 0;
+  border: #eee solid 2rpx;
+  width: 172rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+  background-color: #fff
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 24rpx;
+  line-height: 34rpx;
+}
+
+.triangle {
+  position: absolute;
+  left: 130rpx;
+  width: 0;
+  height: 0;
+  border-width: 14rpx;
+  border-style: solid dashed dashed;
+}
+
+.outer-triangle {
+  top: -13rpx;
+  border-color: transparent transparent #eee transparent;
+}
+
+.inner-triangle {
+  top: -9rpx;
+  border-color: transparent transparent #fff transparent;
+}

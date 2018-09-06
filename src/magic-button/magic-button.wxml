@@ -1,0 +1,18 @@
+<!--components/magic-button/magic-button.wxml-->
+<view class="view-container">
+  <view class="btn-more" bind:tap="onMoreTapped">
+    <view class="img-more">
+      <image src="{{btnMoreImg}}" class="img" mode="aspectFit" />
+    </view>
+  </view>
+  <!--气泡-->
+  <view class="btn-magic" bind:tap="onMagicTapped" wx:if="{{showMagic}}">
+    <view class="triangle outer-triangle" />
+    <view class="inner">
+      <view class="text">
+        <text>取消关注</text>
+      </view>
+    </view>
+    <view class="triangle inner-triangle" />
+  </view>
+</view>
